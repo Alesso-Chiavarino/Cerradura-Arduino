@@ -203,7 +203,6 @@ void loop() {
 		}
 	  }
 	  
-	  
 	  //activa
 	  
 	  if(modo == "activa") {

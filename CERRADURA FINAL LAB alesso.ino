@@ -158,9 +158,14 @@ void loop() {
     }
     }
 
-
+    if(entrada.length() == 1) {
+      lcd.clear();
+      lcd.print("*");
+    }    
 		
 		if(key) {
+
+      
 		  
 			  
 		  
@@ -176,32 +181,24 @@ void loop() {
 		  
 		  
 		  if(key == '#') {
-			  //entrada = entrada.substring(0, entrada.length() -1);
-			if(entrada == pass) {
+			  if(entrada == pass) {
 				  modo = "activa";
           noTone(A1);
-          //preguntar:
-          //delay(100);
-          //tone(A1, toneVal);
-          //delay(200);
-          //noTone(A1);
-          
-				//servoNazi.write(180);
 				  entrada = "";
-			} else {
-				lcd.clear();
-				lcd.setCursor(0,0);
+			  } else {
+				  lcd.clear();
+				  lcd.setCursor(0,0);
 				  lcd.print("Contra erronea");
           tone(A1, toneVal);
 				  entrada = "";
 				  delay(1500);
 				  lcd.clear();
-			}
+			  }
 		  }
 		  
 		  
 		}
-	  }
+	}
 	  
 	  //activa
 	  
@@ -233,6 +230,8 @@ void loop() {
 			lcd.print("Modo desarmar");
 			  delay(2000);
 			lcd.clear();
+      lcd.print("ingrese su clave");
+      lcd.setCursor(0, 1);
 		  }
 	
 		}
@@ -284,6 +283,10 @@ void loop() {
     }
     }
 
+    if(entrada.length() == 1) {
+      lcd.clear();
+      lcd.print("*");
+    }
 	
 		if(key) {
 	
@@ -334,6 +337,8 @@ void loop() {
 			lcd.print("Modo armar");
 			  delay(2000);
 			lcd.clear();
+      lcd.print("ingrese su clave");
+      lcd.setCursor(0, 1);
 		  }
 		  
 		  if(key == 'C') {

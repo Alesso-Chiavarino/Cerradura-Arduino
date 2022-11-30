@@ -176,10 +176,11 @@ void loop() {
         } else {
           lcd.clear();
           lcd.setCursor(0, 0);
-          lcd.print("Contra erronea");
-          entrada = "";
-          delay(1500);
+          lcd.print("Clave invalida");
+          delay(1000);
           lcd.clear();
+          lcd.print("Intente de nuevo");
+          entrada = "";
         }
       }
     }
@@ -215,6 +216,7 @@ void loop() {
         lcd.clear();
         lcd.print("ingrese su clave");
         lcd.setCursor(0, 1);
+        lcd.print("o tarjeta:");
       }
     }
   }
@@ -284,10 +286,11 @@ void loop() {
         } else {
           lcd.clear();
           lcd.setCursor(0, 0);
-          lcd.print("Contra erronea");
-          entrada = "";
-          delay(1500);
+          lcd.print("Clave invalida");
+          delay(1000);
           lcd.clear();
+          lcd.print("Intente de nuevo");
+          entrada = "";
         }
       }
     }
@@ -310,6 +313,7 @@ void loop() {
         lcd.clear();
         lcd.print("ingrese su clave");
         lcd.setCursor(0, 1);
+        lcd.print("o tarjeta:");
       }
 
       if (key == 'C') {
@@ -356,10 +360,11 @@ void loop() {
         } else {
           lcd.clear();
           lcd.setCursor(0, 0);
-          lcd.print("Contra erronea");
-          entrada = "";
-          delay(1500);
+          lcd.print("Clave invalida");
+          delay(1000);
           lcd.clear();
+          lcd.print("Intente de nuevo");
+          entrada = "";
         }
       }
     }
